@@ -1,0 +1,42 @@
+.message {
+  @apply max-w-[70%] flex gap-5 grow flex-col;
+
+  p {
+    @apply bg-[rgba(17,25,40,0.5)];
+  }
+}
+
+.own {
+  @apply self-end;
+
+  p {
+    @apply bg-[#5183fe];
+  }
+}
+
+.texts {
+  @apply grow flex flex-col gap-1;
+
+  p {
+    @apply p-5 rounded;
+  }
+
+  span {
+    @apply text-sm;
+  }
+}
+img {
+  @apply w-full h-[200px] rounded-md object-cover;
+}
+
+input:disabled {
+  @apply cursor-not-allowed;
+}
+
+.sendBtn {
+  @apply bg-[#5183fe] p-2 px-4 rounded;
+
+  &:disabled {
+    @apply bg-[#5182fe4e] cursor-not-allowed;
+  }
+}

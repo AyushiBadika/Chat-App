@@ -1,0 +1,52 @@
+.user {
+  @apply flex flex-col gap-2 items-center p-5 pb-3 border-b border-[#dddddd35];
+
+  img {
+    @apply w-20 h-20 rounded-full object-cover;
+  }
+}
+
+.info {
+  @apply p-5 flex flex-col gap-3;
+
+  .option {
+    @apply flex flex-col;
+
+    .title {
+      @apply flex justify-between items-center;
+
+      img {
+        @apply p-2.5 w-7 h-7 bg-[rgba(17,25,40,0.5)] rounded-full cursor-pointer;
+      }
+    }
+
+    .photos {
+      @apply flex flex-col gap-2;
+
+      .photoDetail {
+        @apply flex justify-between items-center;
+
+        img {
+          @apply w-10 h-10 object-cover rounded;
+        }
+
+        span {
+          @apply text-sm text-gray-300 font-light;
+        }
+      }
+    }
+  }
+
+  button {
+    @apply p-2 bg-[rgba(230,74,105,.5)] text-white border-0 rounded cursor-pointer;
+
+    &:hover {
+      @apply bg-[rgba(220,20,60,0.7)];
+    }
+
+    &.logout {
+      padding: 10px;
+      background-color: #1a73e8;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  background-image: url("/bg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.blurEffect,
+.addMore {
+  backdrop-filter: blur(19px) saturate(180%);
+}
+
+*::-webkit-scrollbar {
+  width: 0.2rem;
+}
+*::-webkit-scrollbar-track {
+  background: #23232990;
+}
+*::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
